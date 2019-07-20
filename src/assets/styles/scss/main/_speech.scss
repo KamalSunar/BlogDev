@@ -1,0 +1,47 @@
+.speech {
+  padding: 1rem 0;
+  margin-bottom: 7.5rem;
+
+  &__quote {
+    font-size: 6rem;
+    color: $bodycolor;
+    opacity: 0.4;
+  }
+
+  &__text {
+    text-align: center;
+    h1 {
+      font-family: "Cinzel", serif;
+      font-size: 3.5rem;
+      padding-bottom: 3rem;
+    }
+
+    h4 {
+      font-weight: 600;
+      font-size: 1.6rem;
+    }
+  }
+
+  &__img {
+    height: 21rem;
+    width: 21rem;
+    border: dashed 0.5px #00000052;
+    border-radius: 50%;
+    padding: 2.8rem;
+    margin: 0 auto;
+    transform: translateY(32px);
+
+    &--main {
+      height: 15.3rem;
+      width: 15.3rem;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.4);
+      }
+    }
+  }
+}

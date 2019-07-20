@@ -1,0 +1,27 @@
+// for all Heading
+@mixin heading {
+  font-size: 4rem;
+  font-weight: 700;
+  padding-bottom: 2.5rem;
+}
+
+@mixin sideHeader {
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+
+@mixin small {
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+
+@mixin sideHeader_1 {
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  padding-bottom: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 500;
+}

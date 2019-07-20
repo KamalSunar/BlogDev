@@ -1,0 +1,26 @@
+.btn,
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  padding: 1.5rem 4rem;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 1.2rem;
+  color: $white;
+  background-image: linear-gradient(180deg, $light-orange 0%, $dark-orange 100%);
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(180deg, $dark-orange 0%, $light-orange 100%);
+  }
+  &:active,
+  &:not(:disabled):not(.disabled):active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(180deg, $dark-orange 100%, $light-orange 100%);
+  }
+}

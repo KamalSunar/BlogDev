@@ -1,0 +1,105 @@
+.notes {
+  padding: 1rem 0;
+  margin-bottom: 7.5rem;
+
+  // Notes Heading
+  &__heading h2 {
+    @include heading;
+  }
+
+  // Notes Links
+  .noteMain {
+    padding: 2rem;
+
+    // Notelinks Header
+    &__header h4 {
+      @include sideHeader;
+      text-transform: uppercase;
+    }
+
+    &__comp {
+      padding: 3rem 5rem;
+      transition: all 250ms ease-out;
+
+      &:hover {
+        box-shadow: 0 3px 31px #00000030;
+      }
+    }
+
+    //Notelink
+    &__links {
+      padding: 1.5rem 0 0 0;
+
+      .note {
+        padding: 0 1.5rem;
+
+        &__items {
+          list-style: none;
+          padding: 0;
+        }
+
+        // For Semester Wise
+        &__links {
+          font-size: 1.4rem;
+          color: $black;
+
+          // hover border animate
+          &::after {
+            width: 0%;
+            height: 1px;
+            background: $dark-orange;
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0px;
+            -webkit-transition: all 0.4s ease-in-out;
+            -moz-transition: all 0.4s ease-in-out;
+            -ms-transition: all 0.4s ease-in-out;
+            -o-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+          }
+          &:hover {
+            color: $black;
+            font-weight: 500;
+            // font-size: 1.5rem;
+            text-decoration: none;
+          }
+          &:hover::after {
+            width: 75%;
+          }
+        }
+
+        // For Year Wise
+        &__links_year {
+          font-size: 1.4rem;
+          color: $black;
+
+          // hover border animate
+          &::after {
+            width: 0%;
+            height: 1px;
+            background: $dark-orange;
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0px;
+            -webkit-transition: all 0.4s ease-in-out;
+            -moz-transition: all 0.4s ease-in-out;
+            -ms-transition: all 0.4s ease-in-out;
+            -o-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+          }
+          &:hover {
+            color: $black;
+            font-weight: 500;
+            // font-size: 1.5rem;
+            text-decoration: none;
+          }
+          &:hover::after {
+            width: 25%;
+          }
+        }
+      }
+    }
+  }
+}
