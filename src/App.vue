@@ -9,6 +9,8 @@
       <Team />
       <Posts />
     </main>
+    <Newsletter />
+    <Footer />
   </div>
 </template>
 
@@ -20,6 +22,8 @@ import Events from "./components/Events/Events.vue";
 import Speech from "./components/speech/Speech.vue";
 import Team from "./components/Team/Team.vue";
 import Posts from "./components/Posts/Post.vue";
+import Newsletter from "./components/Newsletter/newsletter.vue";
+import Footer from './components/Footer/Footer.vue';
 
 export default {
   name: "app",
@@ -30,7 +34,9 @@ export default {
     Events,
     Speech,
     Team,
-    Posts
+    Posts,
+    Newsletter,
+    Footer
   }
 };
 </script>

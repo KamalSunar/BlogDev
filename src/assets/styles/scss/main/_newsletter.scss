@@ -1,0 +1,29 @@
+.newsletter {
+  background-image: linear-gradient(to right, $light-orange, $dark-orange);
+  padding: 9rem 2rem 7.5rem 2rem;
+  margin: 0 auto;
+
+  &__text h4 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: $white;
+    line-height: 4.5rem;
+  }
+
+  &__input {
+    line-height: 2rem;
+
+    @media (max-width: 768px) {
+      line-height: 2.7rem;
+    }
+
+    &--box {
+      padding: 1rem;
+      width: 80%;
+      height: 4.5rem;
+      font-size: 1.5rem;
+      border: 1px solid rgba(175, 175, 175, 0.185);
+      box-shadow: 0 3px 31px #00000030;
+    }
+  }
+}

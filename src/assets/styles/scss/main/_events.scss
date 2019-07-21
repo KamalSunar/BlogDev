@@ -57,6 +57,11 @@
         font-weight: 700;
         letter-spacing: 1px;
       }
+
+      @media (max-width: 575.98px) {
+        display: none;
+        visibility: hidden;
+      }
     }
 
     &:hover,

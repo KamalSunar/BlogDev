@@ -1,0 +1,43 @@
+.footer {
+  padding: 5rem 2rem 1rem 2rem;
+
+  &__title h5 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 3rem;
+  }
+
+  &__main {
+    padding: 0;
+
+    &--items {
+      list-style-type: none;
+      padding-bottom: 2.5rem;
+    }
+
+    &--links {
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: $black;
+
+      &:hover {
+        color: $black;
+      }
+
+      .fa-envelope,
+      .fa-phone {
+        padding-right: 0.5rem;
+      }
+    }
+
+    .footer__icon {
+      font-weight: 600;
+    }
+  }
+
+  .copyright {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+}

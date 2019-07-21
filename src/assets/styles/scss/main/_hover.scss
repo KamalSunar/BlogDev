@@ -5,7 +5,7 @@ figure {
 figure.snip1104 {
   position: relative;
   overflow: hidden;
-  height: 220px;
+  height: 22rem;
   width: auto;
   background: #000000;
   color: #ffffff;
@@ -36,13 +36,13 @@ figure.snip1104 figcaption {
 
 figure.snip1104 h2 {
   position: absolute;
-  left: 40px;
-  right: 40px;
+  left: 4rem;
+  right: 4rem;
   display: inline-block;
   background: #000000;
   -webkit-transform: skew(-10deg) rotate(-10deg) translate(0, -50%);
   transform: skew(-10deg) rotate(-10deg) translate(0, -50%);
-  padding: 12px 5px;
+  padding: 1.2rem 0.5rem;
   margin: 0;
   top: 50%;
   text-transform: uppercase;
@@ -121,4 +121,20 @@ figure.snip1104:hover:before,
 figure.snip1104.hover:before {
   -webkit-transform: rotate(110deg) translateY(-150%);
   transform: rotate(110deg) translateY(-150%);
+}
+
+@media (max-width: 991.98px) {
+  figure.snip1104 {
+    background: transparent;
+  }
+
+  figure.snip1104 img {
+    opacity: 1;
+  }
+
+  figure.snip1104:before,
+  figure.snip1104 h2 {
+    display: none;
+    visibility: hidden;
+  }
 }

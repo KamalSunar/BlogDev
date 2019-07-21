@@ -24,3 +24,37 @@
     background-image: linear-gradient(180deg, $dark-orange 100%, $light-orange 100%);
   }
 }
+
+.submit_btn {
+  height: 4.5rem;
+  padding: 1rem;
+  width: 20%;
+  background-image: linear-gradient(to right, $dark-orange, $light-orange);
+  border: 1px solid rgba(175, 175, 175, 0.185);
+  box-shadow: 0 3px 31px #00000030;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: $white;
+
+  @media (max-width: 767.98px) {
+    font-size: 1rem;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 1.5rem;
+  }
+}
+
+.footer_btn {
+  background-color: transparent;
+  border: 1px solid rgb(160, 160, 160);
+  padding: 1rem 2rem;
+  font-size: 1.35rem;
+  font-weight: 500;
+
+  &:hover {
+    background-image: linear-gradient(to right, $light-orange, $dark-orange);
+    color: $white;
+    cursor: pointer;
+  }
+}

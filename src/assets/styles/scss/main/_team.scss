@@ -50,7 +50,7 @@
       color: $white;
       text-decoration: none;
       box-shadow: 0 3px 31px #00000030;
-      background-image: linear-gradient(180deg, $light-orange, $dark-orange);
+      background-image: linear-gradient(to right, $light-orange, $dark-orange);
       transform: translateY(-3px);
     }
   }

@@ -1,10 +1,18 @@
 .navHeader {
-  overflow: hidden;
-  margin-bottom: 7.5rem;
+  margin: 7.5rem 0;
+
+  .mobile__main {
+    margin-top: 5rem;
+  }
 
   &__info {
-    padding-top: 20rem;
-    padding-left: 12rem;
+    @media (max-width: 991.98px) {
+      margin-top: 5rem;
+    }
+
+    @media (min-width: 991.98px) {
+      margin-top: 20rem;
+    }
 
     &--title h2 {
       @include heading;
@@ -14,5 +22,18 @@
       font-size: 1.5rem;
       font-weight: 500;
     }
+  }
+}
+
+.mobile_none {
+  // Medium devices (tablets, less than 992px and more than 768px)
+  @media (max-width: 991.98px) {
+    display: none;
+    visibility: hidden;
+  }
+
+  @media (min-width: 991.98px) {
+    display: flex;
+    visibility: visible;
   }
 }
